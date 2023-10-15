@@ -2,14 +2,14 @@
   "name": "proshop-v2",
   "version": "2.0.0",
   "description": "eCommerce app built with MERN",
-  "main": "backend/server.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "data:import": "node backend/seeder.js -i",
-    "data:delete": "node backend/seeder.js -d"
+    "data:import": "node seeder.js -i",
+    "data:delete": "node seeder.js -d"
     
   },"engines": {
     "node": "v18.18.1"
