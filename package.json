@@ -9,8 +9,7 @@
     "server": "nodemon backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "data:import": "node backend/seeder.js -i",
-    "data:delete": "node backend/seeder.js -d",
-    "build:client": "npm run build"
+    "data:delete": "node backend/seeder.js -d"
     
   },"engines": {
     "node": "v18.18.1"
