@@ -10,10 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "data:import": "node backend/seeder.js -i",
     "data:delete": "node backend/seeder.js -d",
-    "build": "npm start", 
-    "heroku-postbuild": "npm install && npm run build"
-  },
-  "engines": {
+    "build:client": "npm run build", 
+    "heroku-postbuild": "npm run build:client" 
+  },"engines": {
     "node": "v18.18.1"
   },
   "author": "muthu",
