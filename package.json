@@ -9,7 +9,8 @@
     "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "data:import": "node seeder.js -i",
-    "data:delete": "node seeder.js -d"
+    "data:delete": "node seeder.js -d",
+    "build":"npm install"
     
   },"engines": {
     "node": "v18.18.1"
