@@ -1,6 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser'
+import cors from 'cors'
 
 import connectDB from './config/db.js'
 import products from './data/products.js'
@@ -18,6 +19,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'))
 app.use(express.json())
 app.use(cookieParser())
+app.use(cors())
 
 
 app.use('/api/products', productsRoutes)
